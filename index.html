@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Ivan</title>
+    <link rel="stylesheet" href="ivan.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="form-box" id="login-box">
+        <h1>Login</h1>
+
+        <input type="text" id="login-user" placeholder="Username">
+        <input type="password" id="login-pass" placeholder="Password">
+
+        <button onclick="login()">Login</button>
+
+        <p>Don't have an account?
+            <a href="#" onclick="showRegister()">Register</a>
+        </p>
+    </div>
+
+    <div class="form-box hidden" id="register-box">
+        <h1>Register</h1>
+
+        <input type="text" id="reg-user" placeholder="Username">
+        <input type="password" id="reg-pass" placeholder="Password">
+
+        <button onclick="register()">Register</button>
+
+        <p>Already have an account?
+            <a href="#" onclick="showLogin()">Login</a>
+        </p>
+    </div>
+
+</div>
+
+<script src="ivan.js"></script>
+
+</body>
+</html>
